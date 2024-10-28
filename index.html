@@ -9,15 +9,32 @@
               <meta name="date-submitted" content="##-##-2024">
       <style>
 	  
-		h2 {
-			text-align: center;
-		}
-			body {
+		 body {
 			background: purple url("background.png") no-repeat fixed;
             margin: 0px;
          }  
       
-         ul {
+		 h2.main_header {
+			text-align: center;
+		 }
+         
+		 nav {
+            background-color: #333;
+            position: fixed;
+            bottom: -60px;
+            left: 0;
+            right: 0;
+            padding: 10px 0;
+            text-align: center;
+            transition: bottom 0.3s;
+			z-index: 1000;
+		 }
+		 
+		 nav:hover {
+            bottom: 0;
+         }
+		 
+		 ul {
             list-style-type: none;
             margin: 0px;
             padding: 0px;
@@ -29,24 +46,24 @@
             font-family: Segoe UI;
          }
 	  
-			.nav-h3 ul {
+		 ul {
             display: flex;
             justify-content: center;
-		}
+		 }
          
-         .nav-h3 li {
+         li {
             width: 150px;
             float: left;
          }
          
-         .nav-h3 a {
+         li a {
             display: block;
             background: #E2BFD9;
             padding: 15px 20px;
             text-align: center;
          }
          
-         .nav-h3 a:hover {
+         a:hover {
             color: white;
             background: #E2BFD9;
          }
@@ -56,6 +73,27 @@
             background: #C8A1E0;
          }
 		 
+		 aside {
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 20px 0px 0px 200px;
+            max-width: 300px; 
+            overflow: auto;
+			position: absolute;
+         }
+		 
+		 #what {
+			margin: 20px 20px 20px 550px;
+			max-width: 700px;
+		 }
+		 
+		 #how {
+			margin: 300px 20px 20px 550px;
+			max-width: 700px;
+		 }
+		
+		
       </style>
    </head>
    <body>
@@ -64,11 +102,11 @@
 			<img src="logo.png" alt="group1 logo" width= 100px height = 100px> </img> 
 		</p>
 		
-		<h2> Negative Impacts: Gender Inequality </h2>
+		<h2 class="main_header"> Negative Impacts: Gender Inequality </h2>
 		
 		<br> 
 		
-         <nav class="nav-h3">
+         <nav>
             <ul>
                <li><a class="nav-active5" href="#">Home</a></li>
                <li><a href="#">Information</a></li>
@@ -76,5 +114,23 @@
                <li><a href="#">Contact</a></li>
             </ul>
          </nav>
+		 
+		 <aside>
+			
+			<h2>Lorem Ipsum(Why Gender inequality?)</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque massa erat, blandit sed aliquet quis, mollis et mauris. Fusce varius magna eu mauris eleifend, vitae hendrerit risus gravida. Aenean et commodo libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer bibendum, sapien eget facilisis pellentesque, sem massa tincidunt mi, posuere suscipit libero felis ut lorem. Curabitur ut sollicitudin ex, eget dignissim sapien. Mauris id mi ut quam fringilla egestas. Suspendisse nisi justo, ullamcorper pulvinar ante nec, pellentesque auctor orci. Mauris posuere mattis quam quis elementum. Maecenas et justo vehicula, pharetra turpis quis, volutpat tellus. Maecenas eget eros vitae sem consequat porttitor ut in felis.</p>
+		
+		</aside>
+		
+		<aside id="what">
+			<h2>Lorem Ipsum(What problems of Gender inequality/What is the big issue?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque massa erat, blandit sed aliquet quis, mollis et mauris. Fusce varius magna eu mauris eleifend, vitae hendrerit risus gravida. Aenean et commodo libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer bibendum, sapien eget facilisis pellentesque, sem massa tincidunt mi, posuere suscipit libero felis ut lorem. Curabitur ut sollicitudin ex, eget dignissim sapien. Mauris id mi ut quam fringilla egestas. Suspendisse nisi justo, ullamcorper pulvinar ante nec, pellentesque auctor orci. Mauris posuere mattis quam quis elementum. Maecenas et justo vehicula, pharetra turpis quis, volutpat tellus. Maecenas eget eros vitae sem consequat porttitor ut in felis.</p>
+		
+		</aside>
+		
+		<aside id="how">
+			<h2>Lorem Ipsum (How will this news/article page influence readers./ What the devs hope this website does?</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque massa erat, blandit sed aliquet quis, mollis et mauris. Fusce varius magna eu mauris eleifend, vitae hendrerit risus gravida. Aenean et commodo libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer bibendum, sapien eget facilisis pellentesque, sem massa tincidunt mi, posuere suscipit libero felis ut lorem. Curabitur ut sollicitudin ex, eget dignissim sapien. Mauris id mi ut quam fringilla egestas. Suspendisse nisi justo, ullamcorper pulvinar ante nec, pellentesque auctor orci. Mauris posuere mattis quam quis elementum. Maecenas et justo vehicula, pharetra turpis quis, volutpat tellus. Maecenas eget eros vitae sem consequat porttitor ut in felis.</p>
+		</aside>
    </body>
 </html>
